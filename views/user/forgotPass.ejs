@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Đăng nhập & Đăng ký</title>
+        <link rel="shortcut icon" href="img/logo.webp" type="image/png" />
+
+        <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/site/formAuthen.css" />
+    </head>
+    <body>
+        <div class="logo">
+            <a href="" class="text-decoration-none">
+                <a href="/">
+                    <h1 style="font-size: 2rem; color: #ff6600" class="m-0"><span style="font-size: 1rem" class="text-primary">HD</span>Cours</h1>
+                </a>
+            </a>
+        </div>
+        <div class="container" id="container">
+            <div class="form-container login-container">
+                <form onsubmit="return false">
+                    <h1>Quên mật khẩu</h1>
+                    <input type="email" name="email" id="emailForgot" placeholder="Email" />
+                    <button id="btnForgotPass">Xác nhận</button>
+                    <div class="content">
+                        <div class="pass-link">
+                            <a href="/user">Đăng nhập</a>
+                        </div>
+                        <div class="pass-link">
+                            <a href="/user">Đăng ký</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-right">
+                        <h1 class="title">Bắt đầu hành trình của bạn</h1>
+                        <p>Nếu bạn chưa có tài khoản, hãy tham gia với chúng tôi</p>
+                        <button class="ghost" id="register">
+                            <a href="/user">Đăng ký</a>
+                            <i class="lni lni-arrow-right register"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <script>
+            const registerButton = document.getElementById("register");
+            const loginButton = document.getElementById("login");
+            const container = document.getElementById("container");
+
+            registerButton.addEventListener("click", () => {
+                container.classList.add("right-panel-active");
+            });
+
+            loginButton.addEventListener("click", () => {
+                container.classList.remove("right-panel-active");
+            });
+        </script> -->
+        <script type="module" src="/js/authen.js"></script>
+    </body>
+</html>

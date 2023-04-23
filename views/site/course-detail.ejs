@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>ECOURSES - Online Courses HTML Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="Free HTML Templates" name="keywords" />
+        <meta content="Free HTML Templates" name="description" />
+        <link rel="shortcut icon" href="img/logo.webp" type="image/png" />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" /> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Rubik:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <!-- FontAwesome 6.2.0 CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="/css/style.css" rel="stylesheet" />
+        <link href="/css/site/detail-course.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header><%- include("header") %></header>
+        <main>
+            <!-- Header Start -->
+            <div class="container-fluid page-header" style="margin-bottom: 90px">
+                <div class="container" id="cate_body"></div>
+            </div>
+            <!-- Header End -->
+            <!-- Nội dung khóa học -->
+            <div class="container-fluid px-5">
+                <div class="row px-3">
+                    <div class="col-lg-9">
+                        <div class="description-course">
+                            <h5>Mô tả khóa học</h5>
+                            <p id="course_des"></p>
+                        </div>
+                        <div class="benefit-course">
+                            <h5>Lợi ích từ khóa học</h5>
+                            <p id="course_benefit"></p>
+                        </div>
+                        <div class="progress-course">
+                            <h5>Lộ trình khóa học</h5>
+                            <ul id="routeCourse" class="route my-2"></ul>
+                            <span style="margin-left: 45%" class="showMore text-center rounded border p-1"> Xem thêm </span>
+                        </div>
+                        <div id="teacher-course" class="teacher-course">
+                            <h5>Giảng viên</h5>
+                        </div>
+                    </div>
+                    <div id="card_course" class="course-hot col-lg-3 col-md-6 mb-3 px-0"></div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer Start -->
+        <footer><%- include("footer") %></footer>
+        <!-- Footer End -->
+        <section>
+            <div class="overlay" onclick="closePopup()"></div>
+            <div class="popup px-4" id="popup">
+                <div class="noti text-center px-5">
+                    <lord-icon src="https://cdn.lordicon.com/lpddubrl.json" trigger="loop" style="width: 150px; height: 150px"> </lord-icon>
+                    <h5>Thêm thành công</h5>
+                </div>
+                <div class="link">
+                    <a href="/cart">Đến giỏ hàng</a>
+                </div>
+            </div>
+        </section>
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+        <script defer type="module" src="/js/courseDetail.js"></script>
+       
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Đăng nhập & Đăng ký</title>
+        <link rel="shortcut icon" href="img/logo.webp" type="image/png" />
+
+        <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
+        <link rel="stylesheet" href="/css/site/formAuthen.css" />
+    </head>
+    <body>
+        <div class="logo">
+            <a href="" class="text-decoration-none">
+                <a href="/">
+                    <h1 style="font-size: 2rem; color: #ff6600" class="m-0"><span style="font-size: 1rem" class="text-primary">HD</span>Cours</h1>
+                </a>
+            </a>
+        </div>
+        <div class="container" id="container">
+            <div class="form-container register-container">
+                <form onsubmit="return false">
+                    <h1>Đăng ký</h1>
+                    <input type="text" id="fullname" name="fullname" placeholder="Họ tên" />
+                    <input type="email" id="email" name="email" placeholder="Email" />
+                    <input type="password" id="password" name="password" placeholder="Mật khẩu" />
+                    <input type="password" id="repassword" name="repassword" placeholder="Nhập lại mật khẩu" />
+                    <button id="btnRegis">Đăng ký</button>
+                    <span>hoặc đăng ký bằng</span>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+                        <a href="#" class="social"><i class="lni lni-google"></i></a>
+                        <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-container login-container">
+                <form onsubmit="return false">
+                    <h1>Đăng nhập</h1>
+                    <input type="email" name="email" id="logInemail" placeholder="Email" />
+                    <input type="password" name="password" id="logInPassword" placeholder="Mật khẩu" />
+                    <div class="content">
+                        <div class="checkbox">
+                            <input type="checkbox" name="checkbox" id="checkbox" />
+                            <label>Nhớ mật khẩu</label>
+                        </div>
+                        <div class="pass-link">
+                            <a href="/user/forgotPass">Quên mật khẩu?</a>
+                        </div>
+                    </div>
+                    <button type="submit" id="btnLogIn">Đăng nhập</button>
+                    <span>hoặc bằng tài khoản</span>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
+                        <a href="#" class="social"><i class="lni lni-google"></i></a>
+                        <a href="#" class="social"><i class="lni lni-linkedin-original"></i></a>
+                    </div>
+                </form>
+            </div>
+
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-left">
+                        <h1 class="title">Xin chào</h1>
+                        <p>Nếu bạn có tài khoản, hãy đăng nhập ở đây</p>
+                        <button class="ghost" id="login">
+                            Đăng nhập
+                            <i class="lni lni-arrow-left login"></i>
+                        </button>
+                    </div>
+                    <div class="overlay-panel overlay-right">
+                        <h1 class="title">Bắt đầu hành trình của bạn</h1>
+                        <p>Nếu bạn chưa có tài khoản, hãy tham gia với chúng tôi và bắt đầu hành trình của bạn.</p>
+                        <button class="ghost" id="register">
+                            Đăng ký
+                            <i class="lni lni-arrow-right register"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const registerButton = document.getElementById("register");
+            const loginButton = document.getElementById("login");
+            const container = document.getElementById("container");
+
+            registerButton.addEventListener("click", () => {
+                container.classList.add("right-panel-active");
+            });
+
+            loginButton.addEventListener("click", () => {
+                container.classList.remove("right-panel-active");
+            });
+        </script>
+        <script type="module" src="/js/authen.js"></script>
+    </body>
+</html>

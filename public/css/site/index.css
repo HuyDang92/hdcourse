@@ -1,0 +1,104 @@
+li {
+    list-style: none !important;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+.info-ccourse {
+    z-index: 100;
+}
+.course-hot label {
+    position: absolute;
+    top: 1rem;
+    left: 0rem;
+    padding: 0.2rem 0.8rem;
+    font-size: 80%;
+    background-color: #ff6600;
+    color: #fff;
+}
+.course-hot label::after {
+    content: "";
+    position: absolute;
+    bottom: -40%;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 15px solid rgb(187, 13, 13);
+    border-left: 15px solid transparent;
+    border-right: 0px solid transparent;
+}
+
+.thumb img {
+    width: 100%;
+    height: 10rem !important;
+    object-fit: cover;
+    transition: all 0.3s;
+    z-index: -1;
+}
+
+.thumb span {
+    position: absolute;
+    padding: 0.4rem 0.8rem;
+    background-color: #fff;
+    border-radius: 30px;
+    top: -20%;
+    left: 50%;
+    font-size: 90%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    transition: all 0.4s;
+}
+
+.thumb::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(45, 45, 45, 0.5);
+    display: none;
+}
+.thumb:hover img {
+    transform: scale(1.2);
+}
+.thumb:hover span {
+    top: 50%;
+}
+.thumb:hover::after {
+    display: block;
+}
+.team-img img {
+    width: 100%;
+    height: 15rem !important;
+    object-fit: cover;
+}
+.filter * {
+    font-size: 95%;
+}
+.filter {
+    background-color: #f9faff;
+}
+.filter input {
+    border: none;
+    font-size: 85%;
+    background-color: #f9faff;
+    outline: none;
+}
+.paging * {
+    font-weight: bold;
+}
+.paging a {
+    padding: 0.4rem 0.8rem;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    border: 2px solid #ff6600;
+}
+.paging .active {
+    color: #fff;
+    background-color: #ff6600;
+}
+/* .pagination li{
+    border: 1px solid #ff6600;
+} */

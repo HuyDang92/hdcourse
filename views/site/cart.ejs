@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>ECOURSES - Online Courses HTML Template</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        <meta content="Free HTML Templates" name="keywords" />
+        <meta content="Free HTML Templates" name="description" />
+        <link rel="shortcut icon" href="img/logo.webp" type="image/png" />
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon" />
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" /> -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,800&family=Rubik:wght@300;400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <!-- FontAwesome 6.2.0 CSS -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Libraries Stylesheet -->
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/style.css" rel="stylesheet" />
+        <link href="css/site/cart.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <header><%- include("header") %></header>
+        <main>
+            <!-- Header Start -->
+            <div class="container-fluid page-header" style="margin-bottom: 90px">
+                <div class="container">
+                    <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
+                        <h3 class="display-4 text-white text-uppercase">Giỏ hàng</h3>
+                        <div class="d-inline-flex text-white">
+                            <p class="m-0 text-uppercase"><a class="text-white" href="">Trang chủ</a></p>
+                            <i class="fa fa-angle-double-right pt-1 px-3"></i>
+                            <p class="m-0 text-uppercase">Giỏ hàng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Header End -->
+            <!-- Shopping Cart Section Begin -->
+            <section class="shopping-cart spad">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="shopping__cart__table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Sản Phẩm</th>
+                                            <th>Số Lượng</th>
+                                            <th>Giá</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="rowCourse"></tbody>
+                                </table>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="continue__btn">
+                                        <a href="#">Tiếp Tục Mua Hàng</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="continue__btn update__btn">
+                                        <a href="#"><i class="fa fa-spinner"></i> Cập Nhật Giỏ Hàng</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="cart__discount">
+                                <h6>Mã Giảm Giá</h6>
+                                <form action="#">
+                                    <input type="text" placeholder="Nhập mã" />
+                                    <button type="submit">Áp Dụng</button>
+                                </form>
+                            </div>
+                            <div class="cart__total">
+                                <h6>Tổng Tiền</h6>
+                                <ul>
+                                    <li>Thành Tiền <span>$ 169.50</span></li>
+                                </ul>
+                                <a href="#" class="primary-btn">Proceed to checkout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Shopping Cart Section End -->
+            <div class="container_pop-up p-5">
+                <div class="noti"></div>
+            </div>
+        </main>
+        <!-- Footer Start -->
+        <footer><%- include("footer") %></footer>
+        <!-- Footer End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script type="module" src="js/cart.js"></script>
+    </body>
+</html>

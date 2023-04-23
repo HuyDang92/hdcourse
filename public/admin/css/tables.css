@@ -1,0 +1,100 @@
+.container-tabs {
+    display: flex;
+}
+.container-tabs button {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    color: #fff;
+}
+.tablinks {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: 0.2s ease;
+    width: 100%;
+}
+
+.tablinks:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tablinks.active {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.tabcontent {
+    display: none;
+}
+.tabcontent.active {
+    display: block;
+}
+#addCategoryForm {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 5px;
+}
+#addCourseForm {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 5px;
+}
+#addUserForm {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 5px;
+}
+#edit_img img {
+    width: 4rem;
+    margin-right: 0.5rem;
+}
+
+/* add cart */
+.overlayCourse {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.overlayCourse.show {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+#course_detail * {
+    color: black !important;
+}
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 5px;
+    display: none;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+}
